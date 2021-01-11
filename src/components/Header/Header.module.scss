@@ -1,0 +1,129 @@
+@import "../../_helpers/variables";
+
+* {
+  box-sizing: border-box;
+}
+body {
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+}
+a {
+  text-decoration: none;
+  &:link {
+    color: #494848;
+  }
+  &:visited {
+    color: #494848;
+  }
+  &:active {
+    color: white;
+  }
+}
+.head {
+  background-color: $primary-color;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 130px;
+  color: white;
+  font-family: $font-stack;
+  padding: 0 calc(50% - 650px);
+  @media (min-width: 320px) and (max-width: 680px) {
+    height: 150%;
+    width: 100%;
+    flex-direction: column;
+    justify-content: center;
+  }
+  @media (min-width: 681px) and (max-width: 1170px) {
+    flex-direction: row;
+    align-items: stretch;
+  }
+  &__name {
+    font-size: 25px;
+    font-weight: 700;
+    margin-left: 5%;
+    @media (min-width: 320px) and (max-width: 680px) {
+      font-size: 100%;
+    }
+  }
+  &__menu {
+    display: flex;
+    flex-direction: column;
+    max-width: fit-content;
+    @media (min-width: 681px) and (max-width: 1170px) {
+      width: 70%;
+    }
+  }
+  &__navigation {
+    list-style: none;
+    font-size: 22px;
+    font-family: $font-stack;
+    display: flex;
+    @media (min-width: 320px) and (max-width: 680px) {
+      font-size: 120%;
+      display: block;
+      text-align: center;
+    }
+    @media (min-width: 681px) and (max-width: 1170px) {
+      position: relative;
+      right: 10%;
+      bottom: 10%;
+      text-align: center;
+      align-self: flex-start;
+      font-size: 100%;
+    }
+  }
+  &__phone {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    padding-left: 75%;
+    align-items: center;
+    @media (min-width: 320px) and (max-width: 680px) {
+      font-size: 80%;
+      justify-content: center;
+      padding-left: 10%;
+    }
+    @media (min-width: 681px) and (max-width: 1170px) {
+      font-size: 70%;
+      padding-left: 65%;
+      padding-right: 0;
+      padding-top: 3%;
+      width: fit-content;
+    }
+  }
+  &__item {
+    padding-right: 30px;
+    @media (min-width: 320px) and (max-width: 680px) {
+      padding-right: 0;
+    }
+    @media (min-width: 681px) and (max-width: 1170px) {
+      padding-right: 0;
+      padding-left: 2%;
+    }
+  }
+}
+.logotype {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  max-width: fit-content;
+  font-family: $font-stack;
+  text-shadow: 1px 5px 5px grey;
+  letter-spacing: 1px;
+  @media (min-width: 320px) and (max-width: 680px) {
+    padding-left: 10%;
+  }
+  @media (min-width: 681px) and (max-width: 1170px) {
+    position: relative;
+    padding-left: 1%;
+    margin: auto;
+  }
+}
+.bg_phone {
+  width: 25px;
+  height: 25px;
+  background: url(./css_sprites.png) -136px -79px;
+}
