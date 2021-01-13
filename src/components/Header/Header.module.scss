@@ -5,7 +5,7 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  height: 130px;
+  height: fit-content;
   color: white;
   font-family: $font-stack;
   padding: 0 calc(50% - 650px);
@@ -31,6 +31,7 @@
     display: flex;
     flex-direction: column;
     max-width: fit-content;
+    margin: 0;
     @media (min-width: 681px) and (max-width: 1170px) {
       width: 70%;
     }
@@ -104,5 +105,24 @@
 .bg_phone {
   width: 25px;
   height: 25px;
-  background: url(../img/css_sprites.png) -136px -79px;
+  background: url(../Img/css_sprites.png) -136px -79px;
+}
+.login {
+  padding: 0;
+  margin: 0;
+  font-family: $font-stack;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  padding-left: 75%;
+  align-items: center;
+  font-size: 18px;
+}
+.button {
+  background-color: #cbd4e6;
+  border: white;
+  color: #6c758e;
+  height: 35px;
+  width: 65px;
+  border-radius: 4px;
 }
