@@ -1,0 +1,22 @@
+
+* {
+  box-sizing: border-box;
+}
+body {
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+}
+a {
+  text-decoration: none;
+  &:link {
+    color: #494848;
+  }
+  &:visited {
+    color: #494848;
+  }
+  &:active {
+    color: white;
+  }
+}

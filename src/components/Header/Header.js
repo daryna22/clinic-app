@@ -2,8 +2,8 @@ import React, { Component } from 'react';
 
 // Style
 import style from './Header.module.scss';
-import logo from './logo.png';
-import arrow from './arrow.png';
+import logo from '../img/logo.png';
+import arrow from '../img/arrow.png';
 
 export class Header extends Component {
     render() {

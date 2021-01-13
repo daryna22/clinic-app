@@ -1,26 +1,5 @@
 @import "../../_helpers/variables";
 
-* {
-  box-sizing: border-box;
-}
-body {
-  padding: 0;
-  margin: 0;
-  display: flex;
-  flex-direction: column;
-}
-a {
-  text-decoration: none;
-  &:link {
-    color: #494848;
-  }
-  &:visited {
-    color: #494848;
-  }
-  &:active {
-    color: white;
-  }
-}
 .head {
   background-color: $primary-color;
   display: flex;
@@ -125,5 +104,5 @@ a {
 .bg_phone {
   width: 25px;
   height: 25px;
-  background: url(./css_sprites.png) -136px -79px;
+  background: url(../img/css_sprites.png) -136px -79px;
 }
