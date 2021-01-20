@@ -1,0 +1,86 @@
+@import "../../_helpers/variables";
+
+.clinics {
+  list-style: none;
+  padding: 0 calc(50% - 650px);
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  font-family: Calibri, Candara, Segoe, "Segoe UI", Optima, Arial, sans-serif;
+  @media (min-width: 320px) and (max-width: 680px) {
+    margin: 1%;
+  }
+}
+.contents {
+  border: 3px solid $primary-color;
+  display: flex;
+  flex-direction: column;
+  width: 48%;
+  padding: 2%;
+  margin: 10px;
+  @media (min-width: 320px) and (max-width: 680px) {
+    width: 98%;
+    text-align: center;
+  }
+}
+.clinic_name {
+  display: flex;
+  flex-direction: column;
+  text-align: right;
+  @media (min-width: 320px) and (max-width: 680px) {
+    text-align: center;
+  }
+  @media (min-width: 681px) and (max-width: 1170px) {
+    text-align: center;
+  }
+}
+.adres {
+  color: #67bdd8;
+  text-align: right;
+}
+
+.head {
+  display: flex;
+  justify-content: space-between;
+  @media (min-width: 320px) and (max-width: 680px) {
+    flex-direction: column;
+    margin: auto;
+    align-items: center;
+  }
+  @media (min-width: 681px) and (max-width: 1170px) {
+    flex-direction: column;
+    margin: auto;
+    align-items: center;
+  }
+}
+.call {
+  font-size: 17px;
+  border-radius: 5%;
+  padding: 12px;
+  background-color: $color3;
+  border: none;
+  outline: none;
+  align-self: flex-end;
+  color: white;
+  width: fit-content;
+  @media (min-width: 320px) and (max-width: 680px) {
+    margin: 2%;
+    align-self: center;
+  }
+  @media (min-width: 681px) and (max-width: 1170px) {
+    margin: 2%;
+    align-self: center;
+  }
+}
+.photo {
+  padding-top: 15px;
+}
+.contact {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.phone {
+  font-size: 20px;
+}

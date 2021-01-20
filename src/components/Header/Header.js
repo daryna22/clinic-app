@@ -6,8 +6,8 @@ import LoginAndLogoutButton from "../LoginAndLogoutButton";
 
 // Style
 import style from './Header.module.scss'
-import logo from '../Img/logo.png'
-import arrow from '../Img/arrow.png'
+import logo from './Img/logo.png'
+import arrow from './Img/arrow.png'
 
 export class Header extends Component {
     constructor(props) {
